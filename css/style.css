@@ -1,18 +1,29 @@
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+    font-style: normal;
+    font-display: swap;
+} 
+
 :root{
-    --backround-primary-color:#FFFCFB;
-    --backround-secundary-color:#200E08;
-    --backround-tertiary-color:#FAF1EE;
+    --Terracota-50-color:#FFFCFB;
+    --Terracota-100-color:#FAF1EE;
+    --Terracota-500-color:#F15C29;
+    --Terracota-600-color:#AE4A29;
+    --Terracota-800-color:#222222;
+    --Terracota-900-color:#200E08;
+    --cinza-300-color:#8C8C8C;
+    --cinza-200-color:#D9D9D9;
 
-    --button-primary-color:#AE4A29;
-    --button-secondary-color:#F15C29;
-
-    --text-primary-color:#222222;
-    --text-secondary-color:#FFFCFB;
-
+    --title-weight: 700;
+    --text-weight: 400;
+    --menu-text-weight: 500;
 }
+
 /* CSS RESET */
 body, img, h1, p, fieldset, legend, label, input, select, textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
