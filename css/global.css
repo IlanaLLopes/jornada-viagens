@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --Terracota-50-color: #fffcfb;
+  --Terracota-100-color: #faf1ee;
+  --Terracota-500-color: #f15c29;
+  --Terracota-600-color: #ae4a29;
+  --Terracota-800-color: #222222;
+  --Terracota-900-color: #200e08;
+  --cinza-300-color: #8c8c8c;
+  --cinza-200-color: #d9d9d9;
+
+  --title-weight: 700;
+  --text-weight: 400;
+  --menu-text-weight: 500;
+}
+
+/* CSS RESET */
+body,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "montserrat";
+}
