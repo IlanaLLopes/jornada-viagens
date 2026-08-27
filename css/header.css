@@ -29,6 +29,10 @@ input[type="checkbox"]:checked ~ nav {
   width: 100%;
   background-color: var(--Terracota-900-color);
 }
+#menu:checked ~ nav {
+  transform: translateX(0);
+  visibility: visible;
+}
 nav {
   display: none;
 }
@@ -53,8 +57,12 @@ nav {
   .navigation-menu label {
     display: none;
   }
-  .navigation-menu nav {
+  .navigation-menu nav,
+  input[type="checkbox"]:checked ~ nav {
     display: block;
+    position: static;
+    width: auto;
+    background: none;
   }
   .navigation-menu ul {
     display: flex;
