@@ -10,6 +10,7 @@
   --Terracota-100-color: #faf1ee;
   --Terracota-500-color: #f15c29;
   --Terracota-600-color: #ae4a29;
+   --Terracota-700-color: #5E2816;
   --Terracota-800-color: #222222;
   --Terracota-900-color: #200e08;
   --cinza-300-color: #8c8c8c;
@@ -17,6 +18,7 @@
 
   --title-weight: 700;
   --text-weight: 400;
+  --subtitle-weight: 600;
   --menu-text-weight: 500;
 }
 
