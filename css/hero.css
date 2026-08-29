@@ -3,7 +3,7 @@
   box-sizing: border-box;
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.05) 45%),
-    url("/img/hero.jpg");
+    url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,17 +19,15 @@
 }
 .hero h1 {
   font-size: 28px;
-  line-height: normal;
+  line-height: 1.2;
   font-weight: 700;
 }
 .hero h1 .titulo-1 {
   color: var(--Terracota-900-color);
 }
-
 .hero h1 .titulo-2 {
   color: var(--Terracota-700-color);
 }
-
 .hero h1 .destaque {
   color: var(--Terracota-500-color);
 }
@@ -57,16 +55,13 @@
   font-weight: 600;
   color: var(--Terracota-800-color);
 }
-
 .hero form input {
   border: none;
-  outline: none;
   background: transparent;
   font-family: inherit;
   font-size: 14px;
   padding: 4px 0;
 }
-
 .hero form input::placeholder {
   color: var(--cinza-300-color);
 }
@@ -77,34 +72,39 @@
   padding: 16px 0;
   border-bottom: 1px solid var(--cinza-200-color);
 }
-
 .hero form .campo:last-of-type {
   border-bottom: none;
 }
-
 .hero form .campo svg {
   color: var(--Terracota-600-color);
   flex-shrink: 0;
 }
-
 .hero form .campo-texto {
   display: flex;
   flex-direction: column;
   gap: 4px;
   width: 100%;
 }
-.hero form button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 8px;
-    padding: 16px;
-    border: none;
-    border-radius: 24px;
-    background: var(--Terracota-600-color);
-    color: var(--Terracota-50-color);
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
+.hero form input:focus {
+  outlinne: 2px solid var(--Terracota-500-color);
+  outline-offset: 2px;
+}
+.hero form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 16px;
+  border: none;
+  border-radius: 24px;
+  background: var(--Terracota-600-color);
+  color: var(--Terracota-50-color);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.hero form button:focus {
+  outline: 2px solid var(--Terracota-900-color);
+  outline-offset: 2px;
 }
