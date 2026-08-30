@@ -1,100 +1,156 @@
 <!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Jornada Viagens</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Jornada Viagens</title>
-</head>
-
-<body>
-  <header>
-    <a class="logo" href="index.html" title="voltar para página inicial">
-      <img class="img-mobile" src="img/logo-provisoria-branca.png"
-        alt="Bússola em formato circular branca, com quatro marcações direcionais nas bordas e uma agulha central estilizada em formato triangular, apontando para o noroeste" />
-      <img class="img-desktop" src="img/logo-completa-provisoria-branca.png"
-        alt="Logo comm a bússola do Jornada Viagens em formato circular branca, com quatro marcações direcionais nas bordas e uma agulha central estilizada em formato triangular, apontando para o noroeste. A palavra Jornada está escrita em branco ao lado direito da bússola." />
-    </a>
-    <div class="navigation-menu">
-      <label for="menu"><img src="img/menu-branca.png"
-          alt="Ícone de menu hambúrguer composto por três linhas horizontais brancas, paralelas e de espessura uniforme, centralizadas verticalmente." /></label>
-      <input type="checkbox" id="menu" hidden />
-      <nav>
-        <ul class="list-links">
-          <li>
-            <a href="blog.html" target="_blank" title="Acessar Blog">Blog</a>
-          </li>
-          <li>
-            <a href="pacotes.html" target="_blank" title="Acessar Pacotes de Viagem">Pacotes de viagem</a>
-          </li>
-          <li>
-            <a href="contato.html" target="_blank" title="Acessar Contato">Contato</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!--<section class="hero">
+  <body>
+    <header>
+      <a class="logo" href="index.html" title="voltar para página inicial">
+        <img
+          class="img-mobile"
+          src="img/logo-provisoria-branca.png"
+          alt="Bússola em formato circular branca, com quatro marcações direcionais nas bordas e uma agulha central estilizada em formato triangular, apontando para o noroeste"
+        />
+        <img
+          class="img-desktop"
+          src="img/logo-completa-provisoria-branca.png"
+          alt="Logo comm a bússola do Jornada Viagens em formato circular branca, com quatro marcações direcionais nas bordas e uma agulha central estilizada em formato triangular, apontando para o noroeste. A palavra Jornada está escrita em branco ao lado direito da bússola."
+        />
+      </a>
+      <div class="navigation-menu">
+        <label for="menu"
+          ><img
+            src="img/menu-branca.png"
+            alt="Ícone de menu hambúrguer composto por três linhas horizontais brancas, paralelas e de espessura uniforme, centralizadas verticalmente."
+        /></label>
+        <input type="checkbox" id="menu" hidden />
+        <nav>
+          <ul class="list-links">
+            <li>
+              <a href="blog.html" target="_blank" title="Acessar Blog">Blog</a>
+            </li>
+            <li>
+              <a
+                href="pacotes.html"
+                target="_blank"
+                title="Acessar Pacotes de Viagem"
+                >Pacotes de viagem</a
+              >
+            </li>
+            <li>
+              <a href="contato.html" target="_blank" title="Acessar Contato"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--<section class="hero">
     <div class="hero-img"></div>
     <h2>Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das atividades, cuidamos de todos os
     detalhes para que você aproveite ao máximo cada momento da sua jornada!</h2>
   </section>-->
-  <section class="hero">
-    <div class="hero-texto">
-      <h1>
-        <span class="titulo-1">Sua próxima</span>
-        <span class="titulo-2">jornada começa</span>
-        <span class="destaque">aqui.</span>
-      </h1>
-    </div>
-    <form>
-      <div class="campo">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" />
-          <circle cx="12" cy="10" r="2.5" />
-        </svg>
-        <div class="campo-texto">
-          <label for="destino">Para onde?</label>
-          <input type="text" id="destino" placeholder="Destinos, cidades, atrações">
-        </div>
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>
+          <span class="titulo-1">Sua próxima</span>
+          <span class="titulo-2">jornada começa</span>
+          <span class="destaque">aqui.</span>
+        </h1>
       </div>
-
-      <div class="campo">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-          stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="5" width="18" height="16" rx="3" />
-          <path d="M8 3v4M16 3v4M3 10h18" />
-        </svg>
-        <div class="campo-texto">
-          <label for="data">Quando?</label>
-          <input type="text" id="data" placeholder="Datas da viagem">
+      <form>
+        <div class="campo">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+          <div class="campo-texto">
+            <label for="destino">Para onde?</label>
+            <input
+              type="text"
+              id="destino"
+              placeholder="Destinos, cidades, atrações"
+            />
+          </div>
         </div>
-      </div>
 
-      <div class="campo">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-          stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="8" r="3.5" />
-          <path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6" />
-        </svg>
-        <div class="campo-texto">
-          <label for="viajantes">Quem viaja?</label>
-          <input type="text" id="viajantes" placeholder="Viajantes">
+        <div class="campo">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="3" y="5" width="18" height="16" rx="3" />
+            <path d="M8 3v4M16 3v4M3 10h18" />
+          </svg>
+          <div class="campo-texto">
+            <label for="data">Quando?</label>
+            <input type="text" id="data" placeholder="Datas da viagem" />
+          </div>
         </div>
-      </div>
 
-      <button type="submit">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round">
-          <circle cx="11" cy="11" r="7" />
-          <path d="m20 20-3.5-3.5" />
-        </svg>
-        Buscar
-      </button>
-    </form>
-  </section>
-</body>
+        <div class="campo">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="8" r="3.5" />
+            <path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6" />
+          </svg>
+          <div class="campo-texto">
+            <label for="viajantes">Quem viaja?</label>
+            <input type="text" id="viajantes" placeholder="Viajantes" />
+          </div>
+        </div>
 
+        <button type="submit">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+          Buscar
+        </button>
+      </form>
+    </section>
+    <section class="sobre">
+      <p>
+        Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino
+        à seleção das atividades, cuidamos de todos os detalhes para que você
+        aproveite ao máximo cada momento da sua jornada!
+      </p>
+    </section>
+  </body>
 </html>
