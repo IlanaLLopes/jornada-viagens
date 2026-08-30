@@ -101,6 +101,10 @@
   outline: 2px solid var(--terracota-900-color);
   outline-offset: 2px;
 }
+.hero form button:hover {
+  background: var(--terracota-500-color);
+  transition: background 0.2s;
+}
 @media (min-width: 768px) {
   .hero form {
     flex-direction: row;
