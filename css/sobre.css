@@ -2,6 +2,7 @@
   padding: 44px 16px;
   background-color: var(--terracota-50-color);
 }
+
 .sobre p {
   font-size: 16px;
   text-align: center;
@@ -10,15 +11,23 @@
   line-height: 150%;
   color: var(--terracota-800-color);
 }
+
 @media (min-width: 768px) {
-.sobre p{
+  .sobre {
+    padding: 88px 24px;
+  }
+
+  .sobre p {
     font-size: 24px;
-    line-height: 150%;
+  }
 }
-}
+
 @media (min-width: 1024px) {
-.sobre p{
+  .sobre {
+    padding: 104px 120px;
+  }
+
+  .sobre p {
     font-size: 32px;
-    line-height: 150%;
-}
+  }
 }
