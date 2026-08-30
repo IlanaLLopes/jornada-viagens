@@ -1,5 +1,5 @@
 header {
-  background-color: var(--Terracota-900-color);
+  background-color: var(--terracota-900-color);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,7 +27,7 @@ input[type="checkbox"]:checked ~ nav {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--Terracota-900-color);
+  background-color: var(--terracota-900-color);
 }
 #menu:checked ~ nav {
   transform: translateX(0);
@@ -43,7 +43,7 @@ nav {
   margin: 16px 0;
 }
 .list-links li a {
-  color: var(--Terracota-50-color);
+  color: var(--terracota-50-color);
   text-decoration: none;
   font-weight: var(--menu-text-weight);
   font-size: 24px;
@@ -89,7 +89,7 @@ nav {
     display: none;
   }
   .navigation-menu a:hover {
-    color: var(--Terracota-500-color);
+    color: var(--terracota-500-color);
   }
 }
 @media screen and (min-width: 1920px) {
