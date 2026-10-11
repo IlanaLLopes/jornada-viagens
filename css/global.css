@@ -40,4 +40,35 @@ button {
 }
 body {
   font-family: "montserrat";
+  color: var(--terracota-900-color);
 }
+.section-title h2 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0;
+  text-align:center;
+
+
+}
+
+.section-title hr {
+  border: none;
+  height: 4px;
+  width: 180px;
+  background-color: var(--terracota-500-color);
+  margin: 16px auto 32px;
+}
+
+@media (min-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: var(--title-weight);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: var(--title-weight);
+  }
+ }
