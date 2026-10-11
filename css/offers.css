@@ -1,3 +1,12 @@
+/* ---------- Container dos cards (mobile primeiro) ---------- */
+.offers-cards {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 coluna: um card embaixo do outro */
+  justify-items: stretch;
+  gap: 16px;
+  padding: 0 16px;
+}
+
 /* ---------- Card ---------- */
 .card {
   position: relative;
@@ -8,7 +17,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 312px;
+  max-width: none; /* fill container */
   min-height: 297px;
   padding: 32px 16px;
   border-radius: 16px;
@@ -31,7 +40,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.70) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.70) 100%);
 }
 
 /* Camada 2: conteúdo */
@@ -127,12 +136,29 @@
   white-space: nowrap;
 }
 
-/* ---------- Desktop (≥ 768px) ---------- */
+/* ---------- Tablet (≥ 768px): 2 colunas, cards preenchendo a coluna ---------- */
 @media screen and (min-width: 768px) {
+  .offers-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    gap: 24px;
+    padding: 0 32px;
+  }
+}
+
+/* ---------- Desktop (≥ 1440px) ---------- */
+@media screen and (min-width: 1440px) {
+  .offers-cards {
+    padding: 0 120px; /* sem limite de largura: os cards preenchem o container */
+  }
+
   .card {
-    max-width: 588px;
     min-height: 340px;
     padding: 32px 0;
+  }
+
+  .card-content {
+    padding: 0 32px;
   }
 
   .destination {
@@ -150,5 +176,5 @@
     padding: 16px;
     font-size: 20px;
     line-height: 32px;
-  }   
-} 
+  }
+}
